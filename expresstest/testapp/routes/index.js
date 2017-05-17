@@ -49,7 +49,7 @@ router.get('/:cluster/:quality/:license/:status', function(req, res) {
       license = {$ne:"#"}
     }
     else{
-      license = "LISENCE" + req.params.license;
+      license = "LICENSE " + req.params.license;
     }
     if(cluster == "x"){
       cluster = {$ne:"#"}

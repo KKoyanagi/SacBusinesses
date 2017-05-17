@@ -44,6 +44,9 @@ def datamart():
         html = html+convert(json_object, build_direction=build_direction, table_attributes=table_attributes)
     return render_template('index.html', html=html)
 
+@app.route('/clusters')
+def clusters():
+    return render_template('clusters.html')#passes json to index.html
 
 @app.route('/datamart/update',methods = ['POST'])
 def update():

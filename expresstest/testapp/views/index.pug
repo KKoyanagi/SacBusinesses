@@ -64,6 +64,9 @@ block body
                 br
                 h3 Data Mart
                 h3
+                    a(href='http://localhost:5000/clusters')
+                        | Clusters
+                h3
                     a(href='http://localhost:5000/heatmap')
                         | Heat Map
                         small (2017 Growth)
@@ -97,7 +100,7 @@ block body
                         option(value='maintenancerepair') Maintenance
 
                     p.
-                        Select the business status you would like to view:
+                        Select the cluster status you would like to view:
                     select#dropDown2
                         option(value='x') --View All--
                         option(value='GOOD') Good
